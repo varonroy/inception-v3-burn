@@ -1,0 +1,13 @@
+.idea
+.vscode
+.nvim
+
+/target
+
+env.sh
+
+*.env
+*.env.*
+
+# libraries should ignore `Cargo.lock`
+Cargo.lock

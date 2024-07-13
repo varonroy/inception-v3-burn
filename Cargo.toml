@@ -1,0 +1,16 @@
+[package]
+name = "inception-v3-burn"
+version = "0.1.0"
+edition = "2021"
+authors = ["varonroy <varonroy@gmail.com>"]
+
+[features]
+pretrained = ["burn/network", "dep:dirs"]
+
+[dependencies]
+burn = "^0.13.2"
+burn-import = { version = "^0.13.2" }
+dirs = { version = "5.0.1", optional = true }
+
+[dev-dependencies]
+burn = { version = "^0.13.2", features = ["ndarray"]}
